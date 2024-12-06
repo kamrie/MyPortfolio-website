@@ -1,0 +1,423 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, 'Trebuchet MS';
+}
+
+
+body{
+    background-color:rgb(31,31,31);
+    color: #FFFFFF;
+    overflow-x: hidden;
+}
+
+nav{
+               background-color: rgb(25,25,25);
+               position: sticky;
+               top: 0;
+              z-index: 1000;
+ 
+}
+nav .main-section{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 120px;
+
+    
+}
+       /* background-color: rgb(25,25,25); */
+
+       /* Hamburger Menu Icon */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #dbcdcd;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.menu a{
+    text-decoration: none;
+    color: rgb(227, 227, 227);
+}
+.menu a:hover{
+  transform: scale(1.04);
+  /* text-decoration: underline; */
+  transition: 0.7s;
+  font-size: 22px;
+
+}
+.menu .hire-me a{
+    background-color: rgb(106, 132, 251);
+    color: black;
+    padding: 13px;
+    border-radius:44px ;
+}
+.menu .hire-me a:hover{
+    color: rgb(106, 132, 251);
+background-color: black;
+}
+#first-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 120px;
+    gap: 140px;
+}
+#first-section .first-part{
+    margin: 50px;
+}
+.first-part .my-name{
+    padding-bottom: 20px;
+}
+.first-part .writeup{
+    padding-bottom: 20px;
+    line-height: 31px;
+}
+.socialMedia-links{
+    display: flex;
+    gap: 20px;
+}
+.socialMedia-links a{
+        text-decoration: none;
+        color: rgb(106, 132, 251);
+        border: 1px solid  rgb(106, 132, 251);
+        border-radius: 20px;
+        padding: 2px;
+}
+.Portfolio-photo img{
+    border-radius: 190px;
+}
+
+.hero-section {
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  background-color: rgb(31,31,31);
+  overflow: hidden;
+}
+.scroll-arrow {
+  position: absolute;
+  top: 2px;
+  font-size: 2em;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    background-color:  rgb(31,31,31);
+    padding: 20px;
+}
+
+.box {
+    color: white;
+    font-size: 44px;
+    font-weight: bold;
+    background-color:  rgb(31,31,31);
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.box span{
+    opacity: 0.3;
+    font-size:15px ;
+}
+#project {
+    padding: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    flex-wrap: wrap;
+    
+}
+
+#project main{
+    /* box-shadow: 0 10px 20px rgba(39, 39, 59, 0.9); */
+
+ /* width: 20%; */
+}
+
+@keyframes shadow-animation {
+    0% {
+        box-shadow: 0 10px 20px rgba(43, 43, 50, 0.9);
+    }
+    100% {
+      box-shadow: none;
+    }
+  }
+
+.project-detail {
+        display: flex;
+        gap: 40px;
+       border: 1px solid rgbA(71, 61, 61, 0.4);
+       border-radius:11px ;
+       padding: 10px 160px 10px 10px;
+       animation: shadow-animation 2s infinite alternate;
+       /* animation: colorTransition 3s infinite alternate; Animation settings */
+       /* width: 90%; */
+}
+
+
+.project-detail img{
+    border-radius: 11px;
+    width: 70% ;
+}
+.project-detail img:hover {
+   transform: scale(1.01); /* Increases size by 10% */
+  /* transform: translateY(-10px); Move the element slightly upward */
+ transition: 0.2s;
+}
+.project-detail div{
+    margin-top: 40px;
+ }
+.project-detail div h1{
+color: rgb(106, 132, 251);
+font-weight: 600;
+}
+.project-detail div h5{
+font-size: 16px;
+font-weight: 600;
+display: flex;
+gap: 34px;
+}
+.project-detail div h5 span{
+  opacity: 0.5;
+}
+.project-detail div p{
+    /* width: 90%; */
+    line-height: 30px;
+    opacity: 0.8;
+    /* flex-wrap: wrap; */
+}
+.coding-lang{
+    display: flex;
+    gap: 5px;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+}
+.coding-lang code{
+    color: black;
+    background-color: rgb(225,225,252);
+    padding: 4px 10px;
+    border-radius: 4px;
+    flex-wrap: wrap;
+}
+
+.project-detail div button{
+    padding: 10px 20px;
+    border-radius: 9px;
+    font-weight:bold;
+    background-color: #2b4a71; 
+    color: white;
+    cursor: pointer;
+    animation: colorTransition 3s infinite alternate; /* Animation settings */
+}
+.project-detail div button:hover{ 
+    box-shadow: 0 8px 22px rgba(246, 245, 245, 0.95); /* Larger shadow on hover */
+    transform: translateY(-1px); /* Move the element slightly upward */
+    transition: 0.2s;
+}
+
+
+
+@keyframes colorTransition {
+    0% {
+      background-color: #2b4a71;
+      color: white;
+      border-color: #2b4a71;
+    }
+    100% {
+      background-color: #e0e4eb;
+      color: #2b4a71;
+      border-color: #e0e4eb;
+    }
+  }
+
+.seeAll{
+   margin-left: auto;
+   margin-right: auto;
+    width: 40%;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #2b4a71; 
+    color: white;
+      box-shadow: 0 10px 20px rgba(39, 39, 59, 0.9);
+      animation: colorTransition 3s infinite alternate; /* Animation settings */
+
+}
+.hiddenProject-details{
+    display: none;
+}
+
+#about p{
+    text-align: ;
+    width: 100%;
+     line-height: 30px;
+     font-size: 17px;
+     font-weight:500;
+     color: rgb(181, 181, 196);
+}
+
+/* Add custom styling */
+
+#skillsAccordion{
+    /* background-color: red; */
+}
+.accordion-button {
+font-weight: bold;
+font-size: 1.2rem;
+}
+
+.skills-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 15px;
+margin: 15px 0;
+}
+
+.skill-card {
+flex: 1 1 calc(20% - 15px); /* Adjust cards to occupy 20% of the row */
+max-width: 150px;
+text-align: center;
+padding: 10px;
+background-color: #f8f9fa;
+border: 1px solid #ddd;
+border-radius: 8px;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+transform: scale(1.05);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skill-card img {
+width: 50px;
+height: 50px;
+margin-bottom: 10px;
+}
+
+@media (max-width: 883px) {
+ .menu-icon {
+        display: block; /* Show the hamburger icon */
+        transition: transform 0.8s ease;
+    }
+.menu{
+    display: none;  /*Hide navigation links by default */
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    background-color: rgb(25,25,25);
+    padding: 60px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+    opacity: 0; /* Initial opacity for transition */
+    transform: translateY(-20px); /* Slightly move the menu up */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth animation */
+}
+.menu.show{
+    display: flex;     
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Bring it into view */
+}
+nav .main-section{
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    padding: 40px 50px;
+}
+#first-section{
+    flex-direction: column;
+    gap: 10px;
+    padding: 40px 10px;
+}
+#first-section .first-part{
+    text-align: center;
+}
+.Portfolio-photo img{
+    border-radius: 115px;
+}
+#project{
+    padding-left: 30px;
+}
+.project-detail {
+ flex-direction: column;
+ /* margin-right: 70px; */
+}
+.project-detail img{
+   width: 140%;
+}
+#about p, #about h1, #about .socialMedia-links {
+    text-align: center;
+}
+
+.skill-card {
+    flex: 1 1 calc(33.33% - 15px); /* 3 cards per row */
+}
+}
+
+@media (max-width: 480px) {
+.skill-card {
+    flex: 1 1 calc(100% - 15px); /* Full width */
+}
+}
+
+#get-in-touch {
+    background-color: rgb(48,70,108);
+    border-radius: 100px 0px 0px 0px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+#get-in-touch .contactMe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#get-in-touch .contactMe p{
+opacity: 0.7;
+font-size: 20px;
+width: 45%;
+text-align: center;
+}
+#get-in-touch form{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    gap: 30px;
+}
+#get-in-touch form ol ul{
+padding: 5px;
+}
+#get-in-touch .project-detail  input{
+    padding: 10px;
+    border-radius: 7px;
+    width: 60%;
+}
