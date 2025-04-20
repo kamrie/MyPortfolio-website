@@ -92,7 +92,7 @@ background-color: black;
 }
 .socialMedia-links{
     display: flex;
-    gap: 20px;
+    gap: 4px;
 }
 .socialMedia-links a{
         text-decoration: none;
