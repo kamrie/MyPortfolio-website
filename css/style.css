@@ -104,7 +104,6 @@ background-color: black;
 .Portfolio-photo img{
     border-radius: 190px;
 }
-
 .hero-section {
   height: 15vh;
   display: flex;
@@ -115,6 +114,7 @@ background-color: black;
   text-align: center;
   background-color: rgb(31,31,31);
   overflow: hidden;
+  
 }
 .scroll-arrow {
   position: absolute;
