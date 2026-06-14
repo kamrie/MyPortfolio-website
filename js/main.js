@@ -14,7 +14,7 @@ window.addEventListener("scroll", function () {
   
   // Limit opacity to 0 (fully transparent) when scrolled past fadePoint
   opacity = Math.max(opacity, 0); // will always choose the maximum value between opacity and 0
-  
+
   // Apply opacity to elements
   firstSection.style.opacity = opacity;
   scrollArrow.style.opacity = opacity;
